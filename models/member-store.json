@@ -1,0 +1,40 @@
+{
+  "memberCollection": [
+    {
+      "name":"Homer",
+      "assessments": [
+        {
+          "weight": "78",
+          "chest": "38",
+          "thigh": "16",
+          "upperarm": "10",
+          "waist": "32",
+          "hips": "32"
+        },
+        {
+          "weight": "78",
+          "chest": "38",
+          "thigh": "16",
+          "upperarm": "10",
+          "waist": "32",
+          "hips": "32"
+        }
+        
+      ]
+    },
+    {
+      "name": "Marge",
+      "assessments": [
+        {
+          "weight": "78",
+          "chest": "38",
+          "thigh": "16",
+          "upperarm": "10",
+          "waist": "32",
+          "hips": "32"
+        }
+        
+      ]
+    }
+  ]
+}

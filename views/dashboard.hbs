@@ -1,0 +1,45 @@
+{{> menu id="dashboard"}}
+
+{{#each member}}
+<section class="ui segment">
+  <h2 class="ui header">
+    {{name}}
+  </h2>
+  <table class="ui table">
+  <thead>
+    <tr>
+      <th>Weight</th>
+      <th>Chest</th>
+      <th>Thigh</th>
+      <th>Upper Arm</th>
+      <th>Waist</th>
+      <th>Hips</th>
+    </tr>
+  </thead>
+  <tbody
+         {{#each assessments}}
+    <tr>
+      <td>
+        {{weight}}
+      </td>
+      <td>
+        {{chest}}
+      </td>
+      <td>
+        {{thigh}}
+      </td>
+      <td>
+        {{upperarm}}
+      </td>
+      <td>
+        {{waist}}
+      </td>
+      <td>
+        {{hips}}
+      </td>
+  </tr>
+          {{/each}}
+  </tbody>
+</table>
+</section>
+{{/each}}
