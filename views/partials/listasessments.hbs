@@ -1,18 +1,14 @@
 <table class="ui table">
   <thead>
     <tr>
-      <th>Weight</th>
-      <th>Chest</th>
-      <th>Thigh</th>
-      <th>Upper Arm</th>
-      <th>Waist</th>
-      <th>Hips</th>
+      <th>Song</th>
+      <th>Artist</th>
     </tr>
   </thead>
-  <tbody
-         {{#each ssessment}}
-    <tr>
-      <td>
+  <tbody>
+    {{#each member.assessments}}
+      <tr>
+        <td>
         {{weight}}
       </td>
       <td>
@@ -30,7 +26,7 @@
       <td>
         {{hips}}
       </td>
-  </tr>
-          {{/each}}
+      </tr>
+    {{/each}}
   </tbody>
 </table>

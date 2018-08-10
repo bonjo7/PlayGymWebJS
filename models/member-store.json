@@ -1,39 +1,53 @@
 {
   "memberCollection": [
     {
-      "name":"Homer",
+      "name": "Homer",
       "assessments": [
         {
-          "weight": "78",
-          "chest": "38",
-          "thigh": "16",
-          "upperarm": "10",
-          "waist": "32",
-          "hips": "32"
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
         },
         {
-          "weight": "78",
-          "chest": "38",
-          "thigh": "16",
-          "upperarm": "10",
-          "waist": "32",
-          "hips": "32"
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
+        },
+        {
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
         }
-        
       ]
     },
     {
       "name": "Marge",
       "assessments": [
         {
-          "weight": "78",
-          "chest": "38",
-          "thigh": "16",
-          "upperarm": "10",
-          "waist": "32",
-          "hips": "32"
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
+        },
+        {
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
         }
-        
       ]
     }
   ]
