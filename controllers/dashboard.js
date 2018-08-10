@@ -8,7 +8,7 @@ const dashboard = {
     logger.info('dashboard rendering');
     const viewData = {
       title: 'Dashboard',
-      member: memberStore.getAllMembers(),
+      members: memberStore.getAllMembers(),
     };
     logger.info('about to render', memberStore.getAllMembers());
     response.render('dashboard', viewData);
