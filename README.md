@@ -1,5 +1,7 @@
-"# PlayGymWebJS" 
+Welcome to the Glitch Template 1
+================================
 
-"# Bernard Thompson - 20020038"
+A starter project for learning Glitch.
 
-"# Play Gym Web Applicaition created using JavaScript. The app will allow to register and login as a member or a trainer. Track assessments of members of the gym"
+This is an Express.js project, designed to work well with the Glitch development environment. It includes basic express setup, templating, routing and session support.
+

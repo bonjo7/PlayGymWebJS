@@ -1,0 +1,56 @@
+{
+  "memberCollection": [
+    {
+      "id": "01",
+      "name": "Homer",
+      "assessments": [
+        {
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
+        },
+        {
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
+        },
+        {
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Marge",
+      "assessments": [
+        {
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
+        },
+        {
+          "weight": "Piano Sonata No. 3",
+          "chest": "Piano Sonata No. 3",
+          "thigh": "Beethoven",
+          "upperarm": "Piano Sonata No. 3",
+          "waist": "Piano Sonata No. 3",
+          "hips": "Piano Sonata No. 3"
+        }
+      ]
+    }
+  ]
+}
