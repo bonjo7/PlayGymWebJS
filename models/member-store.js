@@ -19,6 +19,11 @@ const memberStore = {
     _.remove(member.assessments, { id: assessmentId });
   },
   
+   addAssessment(id, assessment) {
+    const member = this.getMember(id);
+    member.assessments.push(assessment);
+  },
+  
 };
 
 module.exports = memberStore;
