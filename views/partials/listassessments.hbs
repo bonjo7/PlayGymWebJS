@@ -1,8 +1,13 @@
 <table class="ui table">
   <thead>
     <tr>
-      <th>Song</th>
-      <th>Artist</th>
+      <th>Weight</th>
+      <th>Chest</th>
+      <th>Thigh</th>
+      <th>Upperarm</th>
+      <th>Waist</th>
+      <th>Hips</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -25,6 +30,9 @@
       </td>
       <td>
         {{hips}}
+      </td>
+      <td>
+        <a href="/member/{{../member.id}}/deleteassessment/{{id}}"><i class="ui red trash alternate icon"></i></a>
       </td>
       </tr>
     {{/each}}

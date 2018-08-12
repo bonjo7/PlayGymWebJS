@@ -11,15 +11,14 @@ const memberStore = {
   },
 
   getMember(id) {
-    let foundMember = null;
-    for (let member of this.memberCollection) {
-      if (id == member.id) {
-        foundMember = member;
-      }
-    }
-
-    return foundMember;
+    return _.find(this.memberCollection, { id: id });
   },
+  
+  removeAssessment(id, assessmentId) {
+    const member = this.getMember(id);
+    _.remove(member.assessments, { id: assessmentId });
+  },
+  
 };
 
 module.exports = memberStore;
