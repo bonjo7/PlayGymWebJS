@@ -5,6 +5,7 @@
       "name": "Homer",
       "assessments": [
         {
+          "id": "03",
           "weight": "Piano Sonata No. 3",
           "chest": "Piano Sonata No. 3",
           "thigh": "Beethoven",
@@ -13,6 +14,7 @@
           "hips": "Piano Sonata No. 3"
         },
         {
+          "id": "04",
           "weight": "Piano Sonata No. 3",
           "chest": "Piano Sonata No. 3",
           "thigh": "Beethoven",
@@ -21,6 +23,7 @@
           "hips": "Piano Sonata No. 3"
         },
         {
+          "id": "05",
           "weight": "Piano Sonata No. 3",
           "chest": "Piano Sonata No. 3",
           "thigh": "Beethoven",
@@ -35,6 +38,7 @@
       "name": "Marge",
       "assessments": [
         {
+          "id": "06",
           "weight": "Piano Sonata No. 3",
           "chest": "Piano Sonata No. 3",
           "thigh": "Beethoven",
@@ -43,6 +47,7 @@
           "hips": "Piano Sonata No. 3"
         },
         {
+          "id": "07",
           "weight": "Piano Sonata No. 3",
           "chest": "Piano Sonata No. 3",
           "thigh": "Beethoven",
