@@ -1,14 +1,15 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const memberStore = require('../models/member-store');
+const memberStore = require('../models/member-store.js');
+const uuid = require('uuid');
 
 const member = {
   index(request, response) {
     const memberId = request.params.id;
     logger.debug('Member id = ', memberId);
     const viewData = {
-      name: 'Member',
+      title: 'Member',
       member: memberStore.getMember(memberId),
     };
     response.render('member', viewData);
@@ -22,13 +23,12 @@ const member = {
     response.redirect('/member/' + memberId);
   },
   
-  addAssessment(request, response) {
+    addAssessment(request, response) {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
-    const uuid = require('uuid');
     const newAssessment = {
       id: uuid(),
-      weight: request.body.weight,
+      weigth: request.body.weight,
       chest: request.body.chest,
       thigh: request.body.thigh,
       upperarm: request.body.upperarm,
@@ -36,10 +36,9 @@ const member = {
       hips: request.body.hips,
     };
     memberStore.addAssessment(memberId, newAssessment);
+    logger.debug('New assessment = ', newAssessment);
     response.redirect('/member/' + memberId);
-    logger.debug('New Assessment = ', newAssessment);
   },
-  
 };
 
 module.exports = member;

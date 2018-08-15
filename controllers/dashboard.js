@@ -1,19 +1,18 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const memberStore = require('../models/member-store');
+const memberCollection = require('../models/member-store.js');
 
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
     const viewData = {
-      title: 'Dashboard',
-      members: memberStore.getAllMembers(),
+      title: 'Member Dashboard',
+      playlists: memberCollection,
     };
-    logger.info('about to render', memberStore.getAllMembers());
+    logger.info('about to render', memberCollection);
     response.render('dashboard', viewData);
   },
 };
-
 
 module.exports = dashboard;
