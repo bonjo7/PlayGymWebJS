@@ -1,0 +1,70 @@
+{
+  "assessments": [
+    {
+      "id": "bff3248c-13ac-4f62-971b-6704fe3661a7",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "2018-08-28T09:391Z",
+      "weigth": 68,
+      "chest": "4",
+      "thigh": "4",
+      "upperarm": "4",
+      "waist": "4",
+      "hips": "4"
+    },
+    {
+      "id": "84b1c5ab-c648-4c76-aa11-edd5f9d2a04e",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "2018-08-29T09:391Z",
+      "weigth": 72,
+      "chest": "5",
+      "thigh": "5",
+      "upperarm": "5",
+      "waist": "5",
+      "hips": "5"
+    },
+    {
+      "id": "22c1356a-98eb-4b2d-b65e-43d951669a0f",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "Thu, 30 Aug 2018 09:49:53 GMT",
+      "weigth": 72,
+      "chest": "2",
+      "thigh": "2",
+      "upperarm": "2",
+      "waist": "2",
+      "hips": "2"
+    },
+    {
+      "id": "b7b5054f-3b5c-4531-bd8e-5c22df664747",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "Thu, 30 Aug 2018 09:54:50 GMT",
+      "weigth": 68,
+      "chest": "1",
+      "thigh": "1",
+      "upperarm": "1",
+      "waist": "1",
+      "hips": "1"
+    },
+    {
+      "id": "45dd7451-a9b1-4660-8d37-c92c265ca725",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "Thu, 30 Aug 2018 20:02:27 GMT",
+      "weigth": 67,
+      "chest": "8",
+      "thigh": "8",
+      "upperarm": "8",
+      "waist": "8",
+      "hips": "8"
+    },
+    {
+      "id": "2dbc3636-7785-41b9-866b-bb94aeb4a231",
+      "memberid": "86a73c08-aa94-4301-be6c-16d9ad553b89",
+      "date": "Thu, 30 Aug 2018 20:35:49 GMT",
+      "weigth": "74",
+      "chest": "38",
+      "thigh": "15",
+      "upperarm": "12",
+      "waist": "36",
+      "hips": "36"
+    }
+  ]
+}

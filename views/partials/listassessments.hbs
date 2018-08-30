@@ -1,4 +1,13 @@
-<table class="ui table">
+
+<section class="ui segment">
+
+    <h2 class="ui header">
+    Welcome - {{member.name}}
+    </h2>
+</section>
+
+    <section class="ui raised segment">
+    <table class="ui fixed table">
   <thead>
     <tr>
       <th>Date</th>
@@ -9,12 +18,16 @@
       <th>Waist</th>
       <th>Hips</th>
       <th></th>
+      <th>Comment</th>
+      <th>Goal</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
-    {{#each member.assessments}}
-    <tr>
-      <td>
+    {{#each assessments}}
+      <tr>
+        <td>
+          {{date}}
       </td>
       <td>
         {{weigth}}
@@ -34,9 +47,22 @@
       <td>
         {{hips}}
       </td>
-      <td>
-        <a href="/member/{{../member.id}}/deleteassessment/{{id}}"> <i class="ui red trash alternate icon"></i></a>
-      </td>
-      {{/each}}
+        <td>
+          <a class="ui teal tag label"></a>
+        </td>
+        <td>
+          <td>
+        </td>
+        </td>
+        <td>
+          <a href="/dashboard/deleteassessment/{{id}}">
+            <i class="ui red large trash alternate icon"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>
+
+
+</section>
