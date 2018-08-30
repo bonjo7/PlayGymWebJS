@@ -3,18 +3,30 @@
 const express = require('express');
 const router = express.Router();
 
+const accounts = require('./controllers/accounts.js');
 const dashboard = require('./controllers/dashboard.js');
-const about = require('./controllers/about.js');
 const trainerdash = require('./controllers/trainerdash.js');
-const member = require('./controllers/member.js');
+const about = require('./controllers/about.js');
+const settings = require('./controllers/settings.js');
 
-router.get('/', dashboard.index);
+router.get('/', accounts.index);
+router.get('/login', accounts.login);
+router.get('/signup', accounts.signup);
+router.get('/logout', accounts.logout);
+router.post('/register', accounts.register);
+router.post('/authenticate', accounts.authenticate);
+
 router.get('/dashboard', dashboard.index);
-router.get('/about', about.index);
+router.get('/dashboard/deleteassessment/:id', dashboard.deleteAssessment);
+router.post('/dashboard/addassessment', dashboard.addAssessment);
+
 router.get('/trainerdash', trainerdash.index);
-router.get('/member/:id', member.index);
-router.get('/member/:id/deleteassessment/:assessmentid', member.deleteAssessment);
+router.get('/member/:id', trainerdash.viewMember);
 router.get('/trainerdash/deletemember/:id', trainerdash.deleteMember);
-router.post('/member/:id/addassessment', member.addAssessment);
+
+router.get('/settings', settings.index);
+router.post('/settings/', settings.updateSettings);
+router.get('/about', about.index);
+
 
 module.exports = router;

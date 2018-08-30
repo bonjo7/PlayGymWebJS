@@ -1,54 +1,14 @@
 {
-  "memberCollection": [
+  "members": [
     {
-      "id": "01",
-      "fname": "homer",
-      "lname": "simpson",
-      "assessments": [
-        {
-          "id": "02",
-          "weigth": "10",
-          "chest": "10",
-          "thigh": "10",
-          "upperarm": "10",
-          "waist": "10",
-          "hips": "10"
-        },
-        {
-          "id": "07",
-          "weigth": "15",
-          "chest": "15",
-          "thigh": "15",
-          "upperarm": "15",
-          "waist": "10",
-          "hips": "10"
-        },
-        {
-          "id": "f741b63a-4126-4cff-93c0-d41bf84c49c5",
-          "weigth": "20",
-          "chest": "20",
-          "thigh": "20",
-          "upperarm": "20",
-          "waist": "20",
-          "hips": "20"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "fname": "marge",
-      "lname": "simpson",
-      "assessments": [
-        {
-          "id": "04",
-          "weigth": "16",
-          "chest": "10",
-          "thigh": "10",
-          "upperarm": "10",
-          "waist": "10",
-          "hips": "10"
-        }
-      ]
+      "name": "Homer Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "gender": "m",
+      "address": "Springfield",
+      "height": 5,
+      "startingWeight": 70
     }
   ]
 }

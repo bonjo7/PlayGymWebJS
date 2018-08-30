@@ -6,7 +6,7 @@ const about = {
   index(request, response) {
     logger.info('about rendering');
     const viewData = {
-      title: 'About PlayGymJS',
+      title: 'About PlayGym JS',
     };
     response.render('about', viewData);
   },
