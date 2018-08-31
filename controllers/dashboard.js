@@ -4,16 +4,19 @@ const accounts = require ('./accounts.js');
 const logger = require('../utils/logger');
 const assessmentStore = require('../models/assessment-store');
 const memberStore = require('../models/member-store');
+const analytics = require('../utils/analytics');
 const uuid = require('uuid');
 
 const dashboard = {
   index(request, response) {
     logger.info('Member dashboard rendering');
-    const loggedInUser = accounts.getCurrentMember(request);
+    const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
       title: 'Member Dashboard',
-      assessments: assessmentStore.getMemberAssessments(loggedInUser.id),
-      member: memberStore.getMemberById(loggedInUser.id),
+      assessments: assessmentStore.getMemberAssessments(loggedInMember.id),
+      member: memberStore.getMemberById(loggedInMember.id),
+      bmiTest: analytics.bmiTest(),
+      bmiCategory: analytics.determineBMICategory(),
     };
     logger.info('about to render', assessmentStore.getAllAssessments());
     response.render('dashboard', viewData);
@@ -45,45 +48,6 @@ const dashboard = {
     response.redirect('/dashboard');
   },
   
-  calculateBMI(id){
-    const member = this.getMemberById(id);
-    const latestBmi = 0;
-    const assessments = this.getAssessment(id);
-    
-    if(assessments.length == 0){
-      latestBmi = (member.startWeigth / (member.height * member.height))
-    }
-    else{
-      assessments = assessments.lenght - 1;
-      latestBmi = (assessments.weight / (assessments.height * assessments.height))
-    }
-    
-    return latestBmi;
-  },
-  
-  determineBMICategory(latestBmi){
-
-        if(latestBmi < 16 ){
-            return "SEVERELY UNDERWEIGHT";
-        }
-        else if(latestBmi >= 16 && latestBmi < 18.5){
-            return "UNDERWEIGHT";
-        }
-        else if(latestBmi >= 18.5 && latestBmi < 25) {
-            return "NORMAL";
-        }
-        else if(latestBmi >= 25 && latestBmi < 30) {
-            return "OVERWEIGHT";
-        }
-        else if(latestBmi >= 30 && latestBmi < 35) {
-            return "MODERATELY OBESE";
-        }
-        else if(latestBmi >= 35) {
-            return "SEVERELY OBESE";
-        }
-
-        return "No value for BMI";
-    }
 };
 
 module.exports = dashboard;
