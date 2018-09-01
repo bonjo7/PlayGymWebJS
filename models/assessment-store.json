@@ -9,7 +9,8 @@
       "thigh": "4",
       "upperarm": "4",
       "waist": "4",
-      "hips": "4"
+      "hips": "4",
+      "comment": "Too much duff"
     },
     {
       "id": "84b1c5ab-c648-4c76-aa11-edd5f9d2a04e",
@@ -20,7 +21,8 @@
       "thigh": "5",
       "upperarm": "5",
       "waist": "5",
-      "hips": "5"
+      "hips": "5",
+      "comment": ""
     },
     {
       "id": "22c1356a-98eb-4b2d-b65e-43d951669a0f",
@@ -31,7 +33,8 @@
       "thigh": "2",
       "upperarm": "2",
       "waist": "2",
-      "hips": "2"
+      "hips": "2",
+      "comment": ""
     },
     {
       "id": "b7b5054f-3b5c-4531-bd8e-5c22df664747",
@@ -42,7 +45,8 @@
       "thigh": "1",
       "upperarm": "1",
       "waist": "1",
-      "hips": "1"
+      "hips": "1",
+      "comment": ""
     },
     {
       "id": "45dd7451-a9b1-4660-8d37-c92c265ca725",
@@ -53,18 +57,20 @@
       "thigh": "8",
       "upperarm": "8",
       "waist": "8",
-      "hips": "8"
+      "hips": "8",
+      "comment": "good work"
     },
     {
       "id": "2dbc3636-7785-41b9-866b-bb94aeb4a231",
-      "memberid": "86a73c08-aa94-4301-be6c-16d9ad553b89",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86b7",
       "date": "Thu, 30 Aug 2018 20:35:49 GMT",
       "weigth": "74",
       "chest": "38",
       "thigh": "15",
       "upperarm": "12",
       "waist": "36",
-      "hips": "36"
+      "hips": "36",
+      "comment": ""
     }
   ]
 }

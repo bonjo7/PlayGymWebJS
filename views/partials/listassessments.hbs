@@ -2,7 +2,7 @@
 <section class="ui segment">
 
     <h2 class="ui header">
-    Welcome - {{member.name}}
+    {{member.name}}
     </h2>
 </section>
 
@@ -51,6 +51,7 @@
           <a class="ui teal tag label"></a>
         </td>
         <td>
+          {{comment}}
           <td>
         </td>
         </td>
@@ -59,9 +60,14 @@
             <i class="ui red large trash alternate icon"></i>
           </a>
         </td>
+      
       </tr>
+      
     {{/each}}
+      
   </tbody>
+
+
 </table>
 
 

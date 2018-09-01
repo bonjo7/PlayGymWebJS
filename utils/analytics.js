@@ -9,30 +9,46 @@ const uuid = require('uuid');
 const analytics = {
   index(request, response) {
     
-    const loggedInUser = accounts.getCurrentMember(request);
+    const loggedInMember = accounts.getCurrentMember(request);
     const viewData = {
       
-      member: memberStore.getMemberById(loggedInUser.id),
-      assessments: assessmentStore.getMemberAssessments(loggedInUser.id),
+      member: memberStore.getMemberById(loggedInMember.id),
+      assessments: assessmentStore.getMemberAssessments(loggedInMember.id),
     };
     
   },
   
-  calculateBMI(member, assessments){
+  /*
+  * Calculate Bmi based on member and member assessments
+  * Member and assessment object
+  */
+  calculateBMI(request, response){
+    
+    const loggedInMember = accounts.getCurrentMember(request);
     
     const latestBmi = 0;
     
-    if(assessments.length == 0){
-      latestBmi = (member.startWeight / (member.height * member.height))
+    latestBmi = (loggedInMember.startWeight / (loggedInMember.height * loggedInMember.height))
+    /*
+    const latestBmi = 0;
+    const weight = member.startWeight;
+    const height = member.height;
+   
+      if(assessments.length == 0){
+      latestBmi = (weight / (height * height))
     }
     else{
-      assessments = assessments.length - 1;
+      assessments = assessments.lenght - 1;
       latestBmi = (assessments.weight / (assessments.height * assessments.height))
     }
     
+    */
     return latestBmi;
   },
   
+  /*
+  * Determine Bmi based on the latestBmi variable
+  */
   determineBMICategory(latestBmi){
 
         if(latestBmi < 16 ){
@@ -56,6 +72,7 @@ const analytics = {
 
         return "No value for BMI";
     },
+  
 };
 
 
