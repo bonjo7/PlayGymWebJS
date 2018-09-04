@@ -42,6 +42,11 @@ const trainerdash = {
     response.render('trainerassessment', viewData);
   },
   
+  /*
+  Method for the trainer to add a comment
+  Get the assessment Id
+  Save and render the trainer dashboard
+  */
   addComment(request, response)
   {
     const assessmentId = assessmentStore.getAssessment(request);

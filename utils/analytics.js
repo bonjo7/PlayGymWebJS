@@ -29,17 +29,23 @@ const analytics = {
     const latestBmi = 0;
     
     latestBmi = (loggedInMember.startWeight / (loggedInMember.height * loggedInMember.height))
+    
     /*
+    
+    calculateBmi(id){
+    
+    const loggedInMember = accounts.getCurrentMember(id);
+    const assessments = assessmentStore.getAssessment(id);
     const latestBmi = 0;
-    const weight = member.startWeight;
-    const height = member.height;
    
       if(assessments.length == 0){
-      latestBmi = (weight / (height * height))
+      latestBmi = (loggedInMember.startWeight / (loggesInMember.height * loggesInMember.height))
     }
     else{
       assessments = assessments.lenght - 1;
       latestBmi = (assessments.weight / (assessments.height * assessments.height))
+    }
+    
     }
     
     */
