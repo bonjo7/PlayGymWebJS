@@ -19,10 +19,12 @@ router.post('/authenticate', accounts.authenticate);
 router.get('/dashboard', dashboard.index);
 router.get('/dashboard/deleteassessment/:id', dashboard.deleteAssessment);
 router.post('/dashboard/addassessment', dashboard.addAssessment);
+router.post('/dashboard/addgoal', dashboard.addGoal);
 
 router.get('/trainerdash', trainerdash.index);
 router.get('/member/:id', trainerdash.viewMember);
 router.get('/trainerdash/deletemember/:id', trainerdash.deleteMember);
+router.post('/trainerdash/addcomment', trainerdash.addComment);
 
 router.get('/settings', settings.index);
 router.post('/settings/', settings.updateSettings);

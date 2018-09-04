@@ -7,8 +7,19 @@
       "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "gender": "m",
       "address": "Springfield",
+      "height": 4,
+      "startWeight": 95
+    },
+    
+    {
+      "name": "Marge Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86b7",
+      "gender": "f",
+      "address": "Springfield",
       "height": 5,
-      "startWeight": 70
+      "startWeight": 68
     }
   ]
 }
